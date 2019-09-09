@@ -1,7 +1,7 @@
 import React from 'react'
 import './../inputs.scss'
 
-const Select_option = ({label,option,hasError,msjError}) => {
+const SelectOption = ({label,option,hasError,msjError}) => {
 
     const formStyle = 'form-element form-select ' + ((hasError)?'form-has-error':'');
     const jsxHelpMsj = (<small class="form-element-hint">{msjError}</small>);     
@@ -24,4 +24,4 @@ const Select_option = ({label,option,hasError,msjError}) => {
     );
 }
 
-export default Select_option;
+export default SelectOption;

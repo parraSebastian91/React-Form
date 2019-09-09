@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { grid, Row, Col, Grid } from 'react-flexbox-grid'
+import {  Row, Col, Grid } from 'react-flexbox-grid'
 import Formulario from './Formulario/formulario'
 import './contedorformulario.css'
 

@@ -1,20 +1,40 @@
-import React from 'react';
-import logo from './logo.svg';
-import { createStore } from 'redux'
+import React, { Component } from 'react';
+import { connect } from 'react-redux'
+import { setInstitucion } from './actions'
+import PropTypes from 'prop-types'; 
+
+//import logo from './logo.svg';
 import ContenedorFormulario from './Component/Contedorformulario/contedorformulario'
+
+
 import './App.css';
 
-const store = createStore(() => {},window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__())
 
-function App() {
 
-  const action  = {type:'setAction', value:'action 1'}
-  store.dispatch(action)
-  return (
-    <div className="App">
+class App extends Component {
+  constructor() {
+    super();
+    this.state = { institucion: null }
+  }
+  render() {
+    this.props.setInstitucion('capredena')
+    return (
+      < div className="App" >
         <ContenedorFormulario></ContenedorFormulario>
-    </div>
-  );
+      </div >)
+  }
 }
 
-export default App;
+/*App.PropTypes = {
+  setInstitucion: PropTypes.func.isRequired
+}*/
+
+const mapDispatchToProps = (dispatch) => (
+  {
+    setInstitucion: value => dispatch(setInstitucion('capredena'))
+  }
+)
+
+const appConnected = connect(null, mapDispatchToProps)(App);
+
+export default appConnected;

@@ -1,7 +1,7 @@
 import React from 'react'
 import './../inputs.scss'
 
-const Check_box = ({label,checkArray}) => {
+const CheckBox = ({label,checkArray}) => {
 
 
     const newcheckArray = checkArray.map((currentValue, index, array) => {
@@ -25,4 +25,4 @@ const Check_box = ({label,checkArray}) => {
     );
 }
 
-export default Check_box;
+export default CheckBox;

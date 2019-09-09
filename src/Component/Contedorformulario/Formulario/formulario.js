@@ -1,10 +1,10 @@
 import React from 'react'
 import { Grid, Row, Col } from 'react-flexbox-grid'
-import Input_normal from './../../utils/inputs/inputs'
-import Text_area from "./../../utils/text_area/text_area";
-import Select_option from "./../../utils/select/select";
-import Check_box from "./../../utils/checkbox/checkbox";
-import Radio_buttom from './../../utils/radio_buttom/radio_buttom'
+import InputNormal from './../../utils/inputs/inputs'
+import TextArea from "./../../utils/text_area/text_area";
+import SelectOption from "./../../utils/select/select";
+import CheckBox from "./../../utils/checkbox/checkbox";
+import RadioButtom from './../../utils/radio_buttom/radio_buttom'
 import './formulario.scss'
 
 const Formulario = () => {
@@ -30,50 +30,50 @@ const Formulario = () => {
             </Row>
             <Row >
                 <Col xs={12} md={6}>
-                    <Input_normal
+                    <InputNormal
                         label={'Nombre Institucion'}
                         placeHolder={'Ingrese nombre Institucion'}
                         hasError={false}
                         msjError={'ERROR!'}
-                    ></Input_normal>
+                    ></InputNormal>
                 </Col>
                 <Col xs={12} md={6}>
-                    <Text_area
+                    <TextArea
                         label={'Nombre Institucion'}
                         placeHolder={'Ingrese nombre Institucion'}
                         hasError={true}
                         msjError={'ERROR!'}>                            
-                        </Text_area>
+                        </TextArea>
                 </Col>
             </Row>
             <Row>
                 <Col xs={12} md={12}>
-                    <Select_option
+                    <SelectOption
                         label={'Nombre Institucion'}
                         option={option}
                         hasError={true}
                         msjError={'ERROR!'}
-                    ></Select_option>
+                    ></SelectOption>
                 </Col>
             </Row>
             <Row>
                 <Col xs={12} md={12}>
-                    <Check_box
+                    <CheckBox
                         label={'Nombre Institucion'}
                         checkArray={check}                       
-                    ></Check_box>
+                    ></CheckBox>
                 </Col>
             </Row>
             <Row>
                 <Col xs={12} md={12}>
-                   <Radio_buttom
+                   <RadioButtom
                    label={'Nombre Institucion'}
                    radioArray={check}      
                    grupo={'radio'}   
                    hasError={false}
                    msjError={'ERROR!'}     
                    >
-                   </Radio_buttom>
+                   </RadioButtom>
                 </Col>
             </Row>
         </Grid>

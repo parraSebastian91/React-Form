@@ -1,7 +1,7 @@
 import React from 'react'
 import './../inputs.scss'
 
-const Text_area = ({ label, placeHolder, hasError, msjError }) => {
+const TextArea = ({ label, placeHolder, hasError, msjError }) => {
     const formStyle = 'form-element form-textarea ' + ((hasError)?'form-has-error':'');
     const jsxHelpMsj = (<small class="form-element-hint">{msjError}</small>);
     return (
@@ -14,4 +14,4 @@ const Text_area = ({ label, placeHolder, hasError, msjError }) => {
     );
 }
 
-export default Text_area;
+export default TextArea;

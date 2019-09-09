@@ -1,7 +1,7 @@
 import React from 'react'
 import './../inputs.scss'
 
-const Input_normal = ({label,placeHolder,hasError,msjError}) => {
+const InputNormal = ({label,placeHolder,hasError,msjError}) => {
     const formStyle = 'form-element form-input ' + ((hasError)?'form-has-error':'');
     const jsxHelpMsj = (<small class="form-element-hint">{msjError}</small>);
     return (        
@@ -15,4 +15,4 @@ const Input_normal = ({label,placeHolder,hasError,msjError}) => {
 }
 
 
-export default Input_normal;
+export default InputNormal;

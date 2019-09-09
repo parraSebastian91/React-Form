@@ -1,7 +1,7 @@
 import React from 'react'
 import './../inputs.scss'
 
-const Radio_buttom = ({label,radioArray,grupo,hasError,msjError}) => {
+const RadioButtom = ({label,radioArray,grupo,hasError,msjError}) => {
 
     const formStyle = 'form-radio form-radio-inline ' + ((hasError)?'form-has-error':'');
     const jsxHelpMsj = (<small class="form-element-hint">{msjError}</small>);
@@ -27,4 +27,4 @@ const Radio_buttom = ({label,radioArray,grupo,hasError,msjError}) => {
     );
 }
 
-export default Radio_buttom;
+export default RadioButtom;
